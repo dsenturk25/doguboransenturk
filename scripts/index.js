@@ -4,6 +4,7 @@ const experienceMapping = {
     title: "Founder @ Ledgerise | 2 years",
     description: "100% transparent and trustworthy proof-of-donation-delivery platform",
     paragraph: "After the 6 February 2023 earthquake in Turkey, I saw the transparency problem in donation campaigns in Turkey. Then I started Ledgerise to solve this problem, bring transparency and trustworthiness to donation campaigns. The platform 100% proves that donation of the donors meet the beneficiary. Ledgerise currently operates with 7 collaborative organizations, 100+ monthly donation parcel traffic and 1000+ beneficiary.",
+    link: "https://ledgerise.org",
     roles: [
       "Head of a team of 3 from Istanbul Technical University.",
       "Launched LR Suite, with over 22,000 lines of code.",
@@ -48,6 +49,7 @@ const experienceMapping = {
     title: "Co-Founder @ Gonullubul.org | 3 years",
     description: "First online volunteering social media for high school students in Turkey.",
     paragraph: "I and my co-founder Hande, started gonullubul to help our friends find social outreach projects. The problem was that the school requires 15 hours of social service per year, but we couldn't find a project to actually attend. We actively solve this problem with gonullubul.org.",
+    link: "https://gonullubul.org",
     roles: [
       "Responsible for all the software development and maintenance.",
       "Launched the app, with over 11,000 lines of code.",
@@ -89,6 +91,7 @@ const experienceMapping = {
       "Launched the app, with over 4,000 lines of code.",
       "Currently live in Uskudar American Academy, starting in 2024 fall.",
     ],
+    link: "https://peertutoring.net",
     skills: [
       "Fullstack development",
       "Backend development",
@@ -118,6 +121,7 @@ const experienceMapping = {
     title: "Software Developer @ Usersmagic | 10 months",
     description: "CRM analytics software for companies",
     paragraph: "Usersmagic is a USA based data analysis start-up. We help companies to publish surveys and get insighful data from their users. I started working as a full-stack developer at 15 years old and launched multiple websites.",
+    link: "https://startupmarket.co/usersmagic",
     roles: [
       "Usersmagic worked with top class companies: Nike, Teknosa, Marketyo, Lufian and Varan.",
       "After I joined we increased our users from 120K to 170K in 3 months.",
@@ -240,6 +244,15 @@ window.onload = () => {
 
       const id = event.target.classList.contains("each-slot-selection-content") ? event.target.id : event.target.parentNode.classList.contains("each-slot-selection-content") ? event.target.parentNode.id : "";
 
+      const eachSlotSelectionWrapper = document.getElementById("each-slot-selection-content");
+
+      for (let i = 0; i < eachSlotSelectionWrapper.children.length; i++) {
+        const eachSlotContent = eachSlotSelectionWrapper.children[i];
+        eachSlotContent.style.backgroundColor = "rgb(40, 40, 40)";
+      }
+
+      document.getElementById(id).style.backgroundColor = "rgba(40, 40, 40, 0.25)";
+      
       experienceRightWrapper.style.opacity = "0";
       
 
@@ -251,10 +264,14 @@ window.onload = () => {
 
       // Create and append the h1 title
       const mainTitle = document.createElement('h1');
-      mainTitle.className = '';
+      mainTitle.className = 'experience-main-title';
       mainTitle.id = 'experience-main-title';
       mainTitle.textContent = experienceMapping[id].title;
       experienceRightWrapper.appendChild(mainTitle);
+
+      mainTitle.addEventListener("click", (event) => {
+        window.open(experienceMapping[id].link)
+      })
 
       // Create and append the h3 description
       const mainDescription = document.createElement('h3');
@@ -437,11 +454,13 @@ window.onload = () => {
       const displayGalleryTextTitle = document.createElement("div");
       displayGalleryTextTitle.innerHTML = eachDisplay.title;
       displayGalleryTextTitle.style.fontSize = "18px";
-      displayGalleryTextTitle.style.marginBottom = "10px";
+      displayGalleryTextTitle.style.marginBottom = "4px";
+      displayGalleryTextTitle.style.fontFamily = "times";
 
       const displayGalleryTextDescription = document.createElement("div");
       displayGalleryTextDescription.innerHTML = eachDisplay.description;
-      displayGalleryTextDescription.style.fontSize = "14px";
+      displayGalleryTextDescription.style.fontSize = "12px";
+      displayGalleryTextDescription.style.color = "#ccc";
 
       displayGalleryTextWrapper.appendChild(displayGalleryTextTitle);
       displayGalleryTextWrapper.appendChild(displayGalleryTextDescription);
