@@ -338,7 +338,7 @@ body {
 }
 
 .display-gallery-each-photo {
-  height: 400px;
+  height: 300px;
   width: fit-content;
   margin-right: 50px;
   margin-bottom: 50px;
@@ -361,12 +361,12 @@ body {
 }
 
 .display-gallery-text-wrapper {
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   height: fit-content;
   bottom: 0;
   position: absolute;
   z-index: 200;
-  padding: 20px;
+  padding: 10px;
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0.5);
 } 

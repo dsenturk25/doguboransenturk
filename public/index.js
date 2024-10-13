@@ -389,50 +389,45 @@ window.onload = () => {
 
   const displayGalleryPhotosContentArray = [
     {
-      title: "Friday night, after a long day",
-      description: "After worldef e-commerce forum.",
-      src: "/public/gallery/sunset1.png"
+      title: "With my Co-Founder!",
+      description: "Name a better duo, I'll wait.",
+      src: "/public/gallery/gonullubul.png"
     },
     {
-      title: "Lost in Istanbul",
-      description: "Bosphorus bridge on the background.",
-      src: "/public/gallery/bosphorus.png"
+      title: "With the marketing team of Ledgerise 💫💫",
+      description: "Getting ready to pitch to 50 investors with the wonderkids of Ledgerise",
+      src: "/public/gallery/ledgerise1.png"
     },
     {
-      title: "Connecting with the nature",
-      description: "At the village house's cozy coffee shop.",
-      src: "/public/gallery/village1.png"
+      title: "Late night office after school",
+      description: "ITU ARI Technopark office. Friday night meeting after university.",
+      src: "/public/gallery/ledgerise2.png"
     },
     {
-      title: "After a busy day",
-      description: "After worldef e-commerce forum.",
-      src: "/public/gallery/sunset2.png"
+      title: "Celebrating our 1000+ beneficiary milestone.",
+      description: "Usual weekends, after meetings, we are having coffee together.",
+      src: "/public/gallery/ledgerise3.png"
     },
     {
-      title: "At the fitness gym",
-      description: "Weekend shoulder day.",
-      src: "/public/gallery/fitness1.png"
+      title: "Networking at ITU Seed Startup Acceleration Center.",
+      description: "With the founder of Medicaurosim, on the right, we are talking to our mentor.",
+      src: "/public/gallery/ledgerise4.png"
     },
     {
-      title: "Born in the village.",
-      description: "Revival after a long city day.",
-      src: "/public/gallery/village2.png"
+      title: "Ledgerise first POC (proof of concept)",
+      description: "When things finally start to work. Thanks to our CTO for the picture.",
+      src: "/public/gallery/ledgerise5.png"
     },
     {
-      title: "After a tiring Tango night.",
-      description: "Dance dance dance 💃💃💃",
-      src: "/public/gallery/mirror.png"
+      title: "Pitching to the jury at Technopark open office.",
+      description: "With Ledgerise's marketing and sales team.",
+      src: "/public/gallery/ledgerise6.png"
     },
     {
-      title: "At the fitness gym",
-      description: "Friday Night Leg Day",
-      src: "/public/gallery/fitness2.png"
+      title: "Brainstorming session with programming team.",
+      description: "Me, as the Head of Programming, working on vision processing code with team members.",
+      src: "/public/gallery/robotics.png"
     },
-    {
-      title: "Pergamon Antique City",
-      description: "Where people heal with the sound of water.",
-      src: "/public/gallery/aspendos.png"
-    }
   ];
 
   displayGalleryPhotosContentArray.forEach(eachDisplay => {
@@ -455,7 +450,6 @@ window.onload = () => {
       displayGalleryTextTitle.innerHTML = eachDisplay.title;
       displayGalleryTextTitle.style.fontSize = "18px";
       displayGalleryTextTitle.style.marginBottom = "4px";
-      displayGalleryTextTitle.style.fontFamily = "times";
 
       const displayGalleryTextDescription = document.createElement("div");
       displayGalleryTextDescription.innerHTML = eachDisplay.description;
