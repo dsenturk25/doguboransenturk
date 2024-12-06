@@ -440,10 +440,6 @@ window.onload = () => {
 
     displayGalleryPhotosWrapper.appendChild(eachPhoto);
 
-
-    eachPhoto.addEventListener("mouseenter", (event) => {
-      
-      eachPhoto.style.scale = "1.2";
       const displayGalleryTextWrapper = document.createElement("div");
       
       const displayGalleryTextTitle = document.createElement("div");
@@ -463,10 +459,5 @@ window.onload = () => {
 
       eachPhoto.appendChild(displayGalleryTextWrapper);
 
-      eachPhoto.addEventListener("mouseleave", (event) => {
-        eachPhoto.style.scale = "1";
-        displayGalleryTextWrapper.remove();
-      });
-    })
   })
 }
