@@ -148,7 +148,7 @@ body {
 
 .each-slot-selection-content-image-wrapper {
   height: 50px;
-  width: fit-content;
+  width: 50px;
 }
 
 .each-slot-selection-content-image-wrapper img {
@@ -338,8 +338,8 @@ body {
 }
 
 .display-gallery-each-photo {
-  height: 300px;
-  width: fit-content;
+  width: 500px;
+  height: 400px;
   margin-right: 50px;
   margin-bottom: 50px;
   border-radius: 10px;
